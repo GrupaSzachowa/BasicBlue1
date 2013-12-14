@@ -16,5 +16,10 @@ namespace BasicBlue
         {
             InitializeComponent();
         }
+
+        private void PrzyciskTestowy_Click(object sender, EventArgs e)
+        {
+            PrzyciskTestowy.Text = "Kliknięto";
+        }
     }
 }
