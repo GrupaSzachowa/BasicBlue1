@@ -7,7 +7,7 @@ namespace SzachyBasicBlue {
 		public KierunekRuchu Kierunek_Ruchu;
 		private bool promocja;
 		private Pionki_Gracza promocja_Do;
-
+        //ZMIANA CZY SIÊ UDA BLABLABLA
 	}
 
 }
