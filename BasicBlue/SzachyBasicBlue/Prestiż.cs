@@ -10,7 +10,7 @@ namespace SzachyBasicBlue {
 		private String goniec;
 		private String skoczek;
 		private String pion;
-
+        //test
 
 	}
 
