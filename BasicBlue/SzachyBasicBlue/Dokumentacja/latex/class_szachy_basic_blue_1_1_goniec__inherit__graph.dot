@@ -1,0 +1,8 @@
+digraph "SzachyBasicBlue.Goniec"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="SzachyBasicBlue.Goniec",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Bierka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_bierka.html",tooltip="Klasa s³u¿y do pokazania u¿ytkownikowi dostêpnych ruchów figur i obliczenie najlepszego ruchu. Klasa pokazuje nam równie¿ iloœæ dostêpnych poruszeñ figur. Wybiera najlepszy ruch. "];
+}

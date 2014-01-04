@@ -1,0 +1,210 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.2cm}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano So, 4 sty 2014 10\-:40\-:17 dla Projekt szachowy programem Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano So, 4 sty 2014 10\-:40\-:17 dla Projekt szachowy programem Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false}
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Projekt szachowy }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.5}\\
+\vspace*{0.5cm}
+{\small So, 4 sty 2014 10:40:17}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Indeks przestrzeni nazw}
+\input{namespaces}
+\chapter{Indeks hierarchiczny}
+\input{hierarchy}
+\chapter{Indeks klas}
+\input{annotated}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja przestrzeni nazw}
+\input{namespace_basic_blue}
+\input{namespace_basic_blue_1_1_properties}
+\input{namespace_szachy_basic_blue}
+\chapter{Dokumentacja klas}
+\input{class_szachy_basic_blue_1_1_bierka}
+\input{class_szachy_basic_blue_1_1_cz_xB3owiek}
+\input{class_basic_blue_1_1_form1}
+\input{class_szachy_basic_blue_1_1_goniec}
+\input{class_szachy_basic_blue_1_1_gra}
+\input{class_szachy_basic_blue_1_1_gracz}
+\input{class_szachy_basic_blue_1_1_hetman}
+\input{class_szachy_basic_blue_1_1_historia___ruch_xF3w}
+\input{class_szachy_basic_blue_1_1_komputer}
+\input{class_szachy_basic_blue_1_1_kr_xF3l}
+\input{class_szachy_basic_blue_1_1_odczyt_gry}
+\input{class_szachy_basic_blue_1_1_pionek}
+\input{class_szachy_basic_blue_1_1_pionki___gracza}
+\input{class_szachy_basic_blue_1_1_presti_xBF}
+\input{class_basic_blue_1_1_properties_1_1_resources}
+\input{class_basic_blue_1_1_properties_1_1_settings}
+\input{interface_szachy_basic_blue_1_1_silnik___gracza}
+\input{class_szachy_basic_blue_1_1_skoczek}
+\input{class_szachy_basic_blue_1_1_szachownica}
+\input{class_szachy_basic_blue_1_1_wie_xBFa}
+\input{class_szachy_basic_blue_1_1_zapis_gry}
+\chapter{Dokumentacja plików}
+\input{_assembly_info_8cs}
+\input{_bierka_8cs}
+\input{_form1_8cs}
+\input{_form1_8_designer_8cs}
+\input{_goniec_8cs}
+\input{_gra_8cs}
+\input{_gracz-_cz_xC5_x82owiek_8cs}
+\input{_gracz-_komputer_8cs}
+\input{_gracz_8cs}
+\input{_hetman_8cs}
+\input{_historia___ruch_xC3_xB3w_8cs}
+\input{_kierunek_ruchu_8cs}
+\input{_kolor___gracza_8cs}
+\input{_kolor__pionk_xC3_xB3w_8cs}
+\input{_kr_xC3_xB3l_8cs}
+\input{_odczyt_gry_8cs}
+\input{_pionek_8cs}
+\input{_pionki___gracza_8cs}
+\input{_presti_xC5_xBC_8cs}
+\input{_resources_8_designer_8cs}
+\input{_settings_8_designer_8cs}
+\input{_silnik___gracza_8cs}
+\input{_skoczek_8cs}
+\input{_szachownica_8cs}
+\input{_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs}
+\input{_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs}
+\input{_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs}
+\input{_wie_xC5_xBCa_8cs}
+\input{_wynik_gry_8cs}
+\input{_zapis_gry_8cs}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\addcontentsline{toc}{part}{Indeks}
+\printindex
+
+\end{document}

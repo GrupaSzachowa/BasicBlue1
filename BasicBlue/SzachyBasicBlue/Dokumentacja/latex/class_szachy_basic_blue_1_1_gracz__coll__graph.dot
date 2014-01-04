@@ -1,0 +1,34 @@
+digraph "SzachyBasicBlue.Gracz"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SzachyBasicBlue.Gracz",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Silnik_Gracza",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_szachy_basic_blue_1_1_silnik___gracza.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ];
+  Node3 [label="SzachyBasicBlue.Gra",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_gra.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="WynikGry",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ];
+  Node5 [label="SzachyBasicBlue.Bierka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_bierka.html",tooltip="Klasa s³u¿y do pokazania u¿ytkownikowi dostêpnych ruchów figur i obliczenie najlepszego ruchu. Klasa pokazuje nam równie¿ iloœæ dostêpnych poruszeñ figur. Wybiera najlepszy ruch. "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pionki_Gracza" ];
+  Node6 [label="SzachyBasicBlue.Pionki\l_Gracza",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_pionki___gracza.html"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" szachownica" ];
+  Node7 [label="SzachyBasicBlue.Szachownica",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_szachownica.html"];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pionki_Gracza" ];
+  Node5 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" szachownica" ];
+  Node3 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" zapisGry" ];
+  Node8 [label="SzachyBasicBlue.ZapisGry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_zapis_gry.html"];
+  Node3 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Ruchów" ];
+  Node9 [label="SzachyBasicBlue.Historia\l_Ruchów",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_historia___ruch_xF3w.html"];
+  Node3 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ];
+  Node10 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" odczytGry" ];
+  Node10 [label="SzachyBasicBlue.OdczytGry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_odczyt_gry.html"];
+  Node3 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ];
+  Node1 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gracz\nGracz" ];
+}

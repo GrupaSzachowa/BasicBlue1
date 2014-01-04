@@ -1,0 +1,40 @@
+digraph "SzachyBasicBlue.Hetman"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SzachyBasicBlue.Hetman",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Bierka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_bierka.html",tooltip="Klasa s³u¿y do pokazania u¿ytkownikowi dostêpnych ruchów figur i obliczenie najlepszego ruchu. Klasa pokazuje nam równie¿ iloœæ dostêpnych poruszeñ figur. Wybiera najlepszy ruch. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pionki_Gracza" ,fontname="Helvetica"];
+  Node3 [label="SzachyBasicBlue.Pionki\l_Gracza",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_pionki___gracza.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ,fontname="Helvetica"];
+  Node4 [label="SzachyBasicBlue.Bierka",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_bierka.html",tooltip="Klasa s³u¿y do pokazania u¿ytkownikowi dostêpnych ruchów figur i obliczenie najlepszego ruchu. Klasa pokazuje nam równie¿ iloœæ dostêpnych poruszeñ figur. Wybiera najlepszy ruch. "];
+  Node3 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pionki_Gracza" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" szachownica" ,fontname="Helvetica"];
+  Node5 [label="SzachyBasicBlue.Szachownica",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_szachownica.html"];
+  Node3 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pionki_Gracza" ,fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ,fontname="Helvetica"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+  Node6 [label="SzachyBasicBlue.Gra",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_gra.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="WynikGry",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" bierka" ,fontname="Helvetica"];
+  Node8 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" zapisGry" ,fontname="Helvetica"];
+  Node8 [label="SzachyBasicBlue.ZapisGry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_zapis_gry.html"];
+  Node6 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Ruchów" ,fontname="Helvetica"];
+  Node9 [label="SzachyBasicBlue.Historia\l_Ruchów",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_historia___ruch_xF3w.html"];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+  Node10 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" odczytGry" ,fontname="Helvetica"];
+  Node10 [label="SzachyBasicBlue.OdczytGry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_odczyt_gry.html"];
+  Node6 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+  Node11 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gracz\nGracz" ,fontname="Helvetica"];
+  Node11 [label="SzachyBasicBlue.Gracz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_szachy_basic_blue_1_1_gracz.html"];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Silnik_Gracza",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_szachy_basic_blue_1_1_silnik___gracza.html"];
+  Node6 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" szachownica" ,fontname="Helvetica"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" szachownica" ,fontname="Helvetica"];
+  Node6 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gra" ,fontname="Helvetica"];
+}

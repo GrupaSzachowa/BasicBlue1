@@ -1,0 +1,12 @@
+digraph "BasicBlue" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_aa48bc2631266f5d9e2f7e663feb7d8e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_aa48bc2631266f5d9e2f7e663feb7d8e.html"];
+    dir_aa48bc2631266f5d9e2f7e663feb7d8e [shape=plaintext label="BasicBlue"];
+    dir_38e96e8dbc28d7abcf251b57bacd0585 [shape=box label="obj" color="red" fillcolor="white" style="filled" URL="dir_38e96e8dbc28d7abcf251b57bacd0585.html"];
+    dir_2f7a00e02f27bb70438de411c7739035 [shape=box label="Properties" color="black" fillcolor="white" style="filled" URL="dir_2f7a00e02f27bb70438de411c7739035.html"];
+    dir_990e6adfaf89d27032f4dc99b5f346b4 [shape=box label="SzachyBasicBlue" color="black" fillcolor="white" style="filled" URL="dir_990e6adfaf89d27032f4dc99b5f346b4.html"];
+  }
+}
