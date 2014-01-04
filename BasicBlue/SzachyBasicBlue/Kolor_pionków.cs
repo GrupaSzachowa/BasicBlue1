@@ -1,8 +1,8 @@
 using System;
 namespace SzachyBasicBlue {
 	public enum Kolor_pionków {
-		Czarne,
-		Bia³e,
+		Czarne,//Murzyny
+		Bia³e,//Pany
 
 	}
 
